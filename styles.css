@@ -63,3 +63,35 @@ p {
     font-weight: bold;
     color: #ADFF2F;
 }
+
+@media screen and (max-width: 768px) {
+    .container-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    ul {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container-buttons button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    ul {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .container-buttons button {
+        width: 100%;
+        padding: 20px;
+    }
+
+    li {
+        padding: 10px;
+    }
+}
